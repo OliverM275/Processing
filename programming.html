@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>My Sketch</title>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+</head>
+<body>
+<script type="application/processing">
+
+<void setup (){
+
+           size(500,500);
+       }
+void draw(){
+  
+  
+  
+  
+  
+   fill(255,117,24);
+background(24,255,233);
+
+ellipse(300,300,300,300);
+fill(52, 64, 235);
+ellipse(240,230,40,40);
+ellipse(340,230,40,40);
+noFill();
+strokeWeight(5);
+fill(125, 235, 52);
+arc(300,330,200,75,0,PI);
+//face
+fill(214, 52, 235);
+triangle(280,260,270,300,300,300);
+
+fill(66, 135, 245);
+rect(270,120,70,70);
+
+//Balloon1
+fill(235, 198, 52);
+      line(mouseX, mouseY, mouseX, mouseY-100);
+ellipse (mouseX, mouseY-100, 50,50);
+//Balloon2
+fill(66, 245, 111);
+line(mouseX, mouseY, mouseX-50, mouseY-150);
+ellipse (mouseX-50, mouseY-150, 50,50);
+//Balloon3  
+  fill(194, 66, 245);
+  line(mouseX, mouseY, mouseX-60, mouseY-40);
+ellipse (mouseX-60, mouseY-40, 50,50);
+  
+  //randomBallons
+   ellipse(random(1000),random(1000),random(500),random(500));
+ fill(random(255),random(255),random(255)); 
+ ellipse(random(1000),random(1000),random(500),random(500));
+ delay(50);
+  
+  
+}>
+
+</script>
+<canvas> </canvas>
+</body>
+</html>
